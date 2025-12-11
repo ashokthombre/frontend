@@ -4,97 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Website</title>
+    <title>Css Selector</title>
     <style>
-        body {
-            background-color: lightgray;
-        }
-
-        div {
-            display: inline-block;
-            color: blue;
-            font-size: 32px;
-        }
-        div#d1 {
-            display: inline block;
-            background-color: yellow;
-            padding: 10px;
-            margin: 20px;
-        }
-
-        h1 {
-            color: green;
-        }
-
-        img#a {
-            border: 5px solid black;
-            border-radius: 100%;
-        }
-        a#a1{
-            display: block;
+        #p {
+            width: 500px;
             height: 500px;
-            width: 300px;
-            background-color: lightblue;
-            
-            text-decoration: none;
-            color: red;
-            font-size: 20px;
-            font-weight: bold;
-            text-shadow: 10px 10px 5px grey;
-        }
-        div#d2{
-            margin: 100px;
-            padding-left: 100px;
-            padding-top: 100px;
-            width: 100px;
-            height: 100px;
-            background-color: pink;
-            border: 10px solid red;
-            box-shadow:  5px 5px 5px grey;
-        }
-        #d3{
-            height: 200px;
-            width: 200px;
-            background-color: orange;
+           
             margin: auto;
-            text-align: center;
-            line-height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
 
+        .common {
+            width: 250px;
+            height: 250px;
+            position: absolute;
+
+        }
+
+        .blue {
+            background: blue;
+            border-bottom-left-radius: 300px;
+            border-top-right-radius: 300px;
+        }
+
+        .green {
+            background: green;
+            margin-left: 250px;
+            border-bottom-right-radius: 300px;
+            border-top-left-radius: 300px;
+        }
+
+        .yellow {
+            background: yellow;
+            margin-top: 250px;
+            border-top-left-radius: 300px;
+            border-bottom-right-radius: 300px;
+           
+        }
+
+        .lavender {
+            margin-left: 250px;
+            margin-top: 250px;
+            background: orange;
+            border-bottom-left-radius: 300px;
+            border-top-right-radius: 300px;
         }
     </style>
+
 </head>
 
 <body>
 
-        <h1>Welcome to my first project</h1>
-        <div>
-            <em>The</em> <span style="font-weight: bolder;">Ashoka </span>another line<strong>!</strong>
-        </div>
-        <div>
-            another line
-            <img id="a" src="./1.jpg" alt="Image" width="300" height="200">
-            <img id="a" src="./1.jpg" alt="Image" width="300" height="200">
-            <img id="a" src="./1.jpg" alt="Image" width="300" height="200">
-            
-        </div>
+    <div id="p">
+        <div class="common c1 blue"></div>
+        <div class="common c2 green"></div>
+        <div class="common c3 yellow"></div>
+        <div class="common c4 lavender"></div>
+    </div>
 
-        <div id="d1">
-            <a id="a1" href="https://www.google.com">Go to Google</a>
-            <a href="https://www.google.com">Go to Google</a>
 
-        </div>
-
-        <div id="d2">
-                A
-        </div>
-
-        <div id="d3">
-            B
-        </div>
-     
 </body>
-<footer>
-
-</footer>
 
 </html>
