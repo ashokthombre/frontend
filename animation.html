@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: black;
+        }
+       .common{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        display: inline-block;
+
+        animation-name: xyz;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+       }
+       .box1{
+        background-color: rebeccapurple;
+        animation-delay: 0s;
+       }
+       .box2{
+        background: red;
+        animation-delay: .1s;
+       }
+       .box3{
+        background: orange;
+        animation-delay: .3s;
+       }
+       .box4{
+        background: yellow;
+        animation-delay: .4s;
+       }
+       .box5{
+        background: green;
+        animation-delay: .5s;
+       }
+       .box6{
+        background: lavender;
+        animation-delay: .5s;
+       }
+
+       @keyframes xyz{
+        0%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(600px);
+        }
+       }
+
+   
+    </style>
+</head>
+<body>
+
+    <div class="box1 common"></div>
+    <div class="box2 common"></div>
+    <div class="box3 common" ></div>
+    <div class="box4 common"></div>
+    <div class="box5 common"></div>
+    <div class="box6 common"></div>
+ 
+    
+</body>
+</html>

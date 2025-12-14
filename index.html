@@ -1,69 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Selector</title>
+    <title>Document</title>
     <style>
-        #p {
-            width: 500px;
-            height: 500px;
-           
-            margin: auto;
-            overflow: hidden;
-            position: relative;
+        .box1{
+            width: 200px;
+            height: 200px;
+          
+            background: red;
+            margin: 100px auto;
+            animation-name:abc;
+            animation-duration: 1s;
+            animation-timing-function:ease-in;
+            animation-iteration-count: 10;
         }
+        @keyframes abc{
+            0%{
 
-        .common {
-            width: 250px;
-            height: 250px;
-            position: absolute;
-
-        }
-
-        .blue {
-            background: blue;
-            border-bottom-left-radius: 300px;
-            border-top-right-radius: 300px;
-        }
-
-        .green {
-            background: green;
-            margin-left: 250px;
-            border-bottom-right-radius: 300px;
-            border-top-left-radius: 300px;
-        }
-
-        .yellow {
-            background: yellow;
-            margin-top: 250px;
-            border-top-left-radius: 300px;
-            border-bottom-right-radius: 300px;
-           
-        }
-
-        .lavender {
-            margin-left: 250px;
-            margin-top: 250px;
+            transform: rotateZ(0deg);
             background: orange;
-            border-bottom-left-radius: 300px;
-            border-top-right-radius: 300px;
+            }
+            25%{
+                transform: rotate(90deg);
+                background: yellow;
+
+            }
+            50%{
+                transform: rotateZ(180deg);
+                background: purple;
+
+            }
+            75%{
+                transform: rotateZ(270deg);
+                background: green;
+            }
+            100%{
+                transform: rotateZ(360deg);
+                background: red;
+            }
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+          
+            background: red;
+            margin: 100px auto;
+            animation-name:abc2;
+            animation-duration: 1s;
+            animation-timing-function:ease-in-out;
+            animation-iteration-count: 10;
+        }
+        @keyframes abc2{
+            0%{
+
+            transform: rotateZ(0deg);
+            background: orange;
+            }
+            25%{
+                transform: rotate(90deg);
+                background: yellow;
+
+            }
+            50%{
+                transform: rotateZ(180deg);
+                background: purple;
+
+            }
+            75%{
+                transform: rotateZ(270deg);
+                background: green;
+            }
+            100%{
+                transform: rotateZ(360deg);
+                background: red;
+            }
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+          
+            background:orange;
+            animation-name:abc3;
+            animation-duration: 5s;
+            animation-timing-function:linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes abc3{
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translate(1000px);
+            }
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+            background: rebeccapurple;
+           animation-name: abc4;
+           display: inline-block;
+           animation-duration: 5s;
+           animation-timing-function: linear;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+
+        }
+        @keyframes abc4{
+            0%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(-1000px);
+            }
         }
     </style>
-
 </head>
-
 <body>
+    
 
-    <div id="p">
-        <div class="common c1 blue"></div>
-        <div class="common c2 green"></div>
-        <div class="common c3 yellow"></div>
-        <div class="common c4 lavender"></div>
-    </div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <a href="./animation.html">Go to Animation</a>
 
 
 </body>
-
 </html>

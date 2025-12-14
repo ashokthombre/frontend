@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('/img/milkyway.jpg');
+            background-size: cover;
+        }
+
+        .sun {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: red;
+            background-image: url('/img/sun.png');
+            background-size: cover;
+            margin: 250px auto;
+            position: relative;
+        }
+
+        .mercury {
+            width: 50px;
+            height: 50px;
+            background-image: url('/img/1mercury.png');
+            background-size: cover;
+            position: absolute;
+            bottom: 10px;
+            right: -100px;
+            transform-origin: -110px center;
+            animation-name: mercuryAnimation;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+
+        }
+
+        @keyframes mercuryAnimation {
+            0% {
+                transform: rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateZ(359deg);
+            }
+
+        }
+
+        .venus {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            background-image: url('/img/2venus.png');
+
+            background-size: cover;
+            bottom: 10px;
+            right: -200px;
+            transform-origin: -208px center;
+            animation-name: venusAnimation;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes venusAnimation {
+
+            0% {
+                transform: rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateZ(359deg);
+            }
+        }
+
+        .earth {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            background-image: url('/img/3earth.png');
+            background-size: cover;
+            bottom: 10px;
+            right: -300px;
+            transform-origin: -310px center;
+            animation-name: earthAnimation;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes earthAnimation {
+            0% {
+                transform: rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateZ(359deg);
+            }
+
+        }
+
+        .moon {
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            position: absolute;
+            background: rgb(236, 236, 236);
+            background-size: cover;
+            bottom: 10px;
+            right: -50px;
+            transform-origin: -80px center;
+            animation-name: moonAnimation;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moonAnimation {
+            0% {
+                transform: rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateZ(359deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sun">
+
+        <div class="mercury"></div>
+        <div class="venus"></div>
+        <div class="earth">
+            <div class="moon">
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

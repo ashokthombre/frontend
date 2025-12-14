@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            margin: 250px auto;
+            background-image: url("img/zcX5MLq6i.png");
+            background-size: cover;
+             background-repeat: no-repeat;
+            
+            animation-name: birdAnimation;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(4);
+            position: relative;
+              
+        }
+        @keyframes birdAnimation {
+            0%{
+                  background-position: 0px 0px;
+            }
+            100%{
+                background-position: -600px 0px;
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>

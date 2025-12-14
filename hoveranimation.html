@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        .box {
+            width: 280px;
+            height: 212px;
+            margin-left: 20px;;
+            display: inline-block;
+            background-color: lightblue;
+            background-image: url('/img/photo-1.jpg');
+            background-size: cover;
+
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .overlay {
+            width: 280px;
+            height: 212px;
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: -212px;
+            left: 0;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        .box:hover .overlay {
+            top: 0;
+        }
+
+        .box2 {
+            width: 280px;
+            height: 212px;
+            margin-top: 0px;
+            margin-left: 20px;
+
+            display: inline-block;
+            background-color: lightblue;
+            background-image: url('/img/photo-1.jpg');
+            background-size: cover;
+
+
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .overlay2 {
+            width: 280px;
+            height: 212px;
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: -280px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        .box2:hover .overlay2 {
+            left: 0;
+        }
+
+
+        .overlay>a {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 50px;
+            top: 81px;
+            left: 80px;
+        }
+
+        .anchor {
+            left: 140px !important;
+        }
+
+        .overlay2>a {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 50px;
+            top: 81px;
+            left: 80px;
+        }
+
+        .box3 {
+            width: 280px;
+            height: 212px;
+                 margin-left: 20px;
+            display: inline-block;
+            background-image: url("img/photo-1.jpg");
+            background-size: cover;
+            position: relative;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            overflow: hidden;
+
+
+        }
+
+        .overlay3 {
+            width: 280px;
+            height: 212px;
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 280px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box3:hover .overlay3 {
+            left: 0;
+        }
+
+        .overlay3>a {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 50px;
+            top: 81px;
+            left: 80px;
+        }
+        .box4{
+            width: 280px;
+            height: 212px;
+                 margin-left: 20px;
+            display: inline-block;
+            background-image: url("img/photo-1.jpg");
+            background-size: cover;
+            position: relative;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+           overflow: hidden;
+        }
+        .overlay4{
+
+            width: 280px;
+            height: 212px;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: relative;
+            bottom: -212px;
+            left: 0;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+
+        }
+        .box4:hover .overlay4 {
+            top: 0;
+        }
+        .overlay4>a {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 50px;
+            top: 81px;
+            left: 80px;
+        }
+         .box5{
+            width: 280px;
+            height: 212px;
+            margin-left: 20px;;
+            margin-top: 20px;
+            display: inline-block;
+            background-image: url("img/photo-1.jpg");
+            background-size: cover;
+            position: relative;
+            box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+           overflow: hidden;
+        }
+        .overlay5{
+
+            width: 280px;
+            height: 212px;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: relative;
+            bottom: -212px;
+            left: 0;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+           
+        }
+        .box5:hover .overlay5 {
+            top: 0;
+         
+        }
+        .overlay5>a {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 50px;
+            top: 81px;
+            left: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+            <div class="container">
+                <div class="common box">
+                    <div class="overlay">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a class="anchor" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+
+                </div>
+                <div class="box2">
+                    <div class="overlay2">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a class="anchor" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="overlay3">
+
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a class="anchor" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+
+                </div>
+                <div class="box4">
+                    <div class="overlay4">
+
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a class="anchor" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+
+                </div>
+
+                    <div class="box5">
+                    <div class="overlay5">
+
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a class="anchor" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+</body>
+
+</html>
